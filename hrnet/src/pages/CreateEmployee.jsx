@@ -1,7 +1,11 @@
 import styled from "styled-components"
+import {useState} from "react"
 
 //Components
 import SimpleInput from "../components/SimpleInput"
+import SelectStates from "../components/SelectStates"
+import SelectDepartments from "../components/SelectDepartments"
+import ModalWindow from "../components/ModalWindow"
 
 //Styles
 import colors from "../styles/colors"
@@ -9,7 +13,6 @@ import colors from "../styles/colors"
 const FORM = styled.form`
     display: flex;
     flex-direction: column;
-
     row-gap: 2.5rem;
 `
 
@@ -25,8 +28,18 @@ const BUTTON = styled.button`
     color: ${colors.white};
 `
 
-
 function CreateEmployee () {
+    const [active, setActive] = useState(false)
+
+    const close = () => {
+        setActive(!active)
+    }
+
+    const handleSumbit = (e) => {
+        e.preventDefault()
+        setActive(true)
+    }
+
     return (
         <main>
             <FORM>
@@ -50,8 +63,14 @@ function CreateEmployee () {
                     type = "number"
                     id = "zip"
                 />
-                <BUTTON>Save</BUTTON>
+                <SelectStates />
+                <SelectDepartments />
+                <BUTTON onClick = {(e) => handleSumbit(e)}>Save</BUTTON>
             </FORM>
+            <ModalWindow
+                active = {active}
+                close = {close}
+            />
         </main>
     )
 }
