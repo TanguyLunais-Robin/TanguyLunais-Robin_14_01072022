@@ -1,4 +1,4 @@
-import { Modal } from "rs-react-modal";
+import { Modal } from "ts-react-modal";
 
 //Styles
 import colors from "../styles/colors";

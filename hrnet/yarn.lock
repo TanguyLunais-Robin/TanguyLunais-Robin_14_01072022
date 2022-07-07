@@ -10359,9 +10359,9 @@
   "resolved" "https://registry.npmjs.org/rs-react-datepicker/-/rs-react-datepicker-1.2.8.tgz"
   "version" "1.2.8"
 
-"rs-react-modal@^2.0.2":
+"ts-react-modal@^2.0.2":
   "integrity" "sha512-D/rXAfvYTKHTkwI6kszX9wMzUiD73Qb3SIyLRjWs/R0R9aXMLavrVUs3eW4RiSiLVWsYDWopgrxL/THaO3qlIA=="
-  "resolved" "https://registry.npmjs.org/rs-react-modal/-/rs-react-modal-2.0.2.tgz"
+  "resolved" "https://registry.npmjs.org/ts-react-modal/-/ts-react-modal-2.0.2.tgz"
   "version" "2.0.2"
 
 "rs-react-select@^1.2.1":
