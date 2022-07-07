@@ -3,7 +3,8 @@ const colors = {
     orange: "#F04329",
     orangeLight: "rgba(240, 67, 41, .3)",
     purpleDark: "#323161",
-    purpleLight: "#594B94"
-}
+    purpleLight: "#594B94",
+    Blue: "#00008B"
+};
 
-export default colors
+export default colors;
